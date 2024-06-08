@@ -12,10 +12,23 @@
             background-color: #f4f4f4;
         }
         .header {
-            background-color: #009688;
+            background-color: #ff7043;
             color: white;
             padding: 1em 0;
             text-align: center;
+        }
+        .nav {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav a {
+            color: #ff7043;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
         }
         .container {
             width: 80%;
@@ -30,7 +43,7 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         .footer {
-            background-color: #009688;
+            background-color: #ff7043;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -38,13 +51,28 @@
             bottom: 0;
             width: 100%;
         }
-        a {
-            color: #009688;
-            text-decoration: none;
+        .banner {
+            text-align: center;
+            padding: 50px 0;
+            background: url('banner_image.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
         }
-        img {
-            max-width: 100%;
-            border-radius: 5px;
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: #ff7043;
+            padding: 20px 0;
+        }
+        .category {
+            text-align: center;
+            color: white;
+            margin: 10px;
+            flex: 1;
+        }
+        .category img {
+            max-width: 50px;
         }
     </style>
 </head>
@@ -53,10 +81,22 @@
         <h1>Dr.Henning Spray 175ml (Chlorethyl)</h1>
     </div>
 
+    <div class="nav">
+        <a href="#">Apie mus</a>
+        <a href="#">E-parduotuvė</a>
+        <a href="#">Straipsniai</a>
+        <a href="#">Kontaktai</a>
+    </div>
+
+    <div class="banner">
+        <h2>Judėk laisvai!</h2>
+        <p>Jūsų raumenims ir sąnariams</p>
+    </div>
+
     <div class="container">
         <div class="section">
             <h2>Apie Produktą</h2>
-            <img src="path_to_image.jpg" alt="Dr.Henning Spray 175ml (Chlorethyl)">
+            <img src="product_image.jpg" alt="Dr.Henning Spray 175ml (Chlorethyl)">
             <p>Dr.Henning Spray yra aukštos kokybės chloretilo purškalas, skirtas skausmo malšinimui ir uždegimų gydymui. Produktas yra patogioje 175 ml pakuotėje, leidžiantis jį lengvai naudoti bet kur ir bet kada.</p>
         </div>
 
@@ -80,6 +120,41 @@
             <p>El. paštas: <a href="mailto:info@example.com">info@example.com</a></p>
             <p>Telefonas: <a href="tel:+37060000000">+370 600 00000</a></p>
             <p>Adresas: Kaunas, Lietuva</p>
+        </div>
+    </div>
+
+    <div class="categories">
+        <div class="category">
+            <img src="heart_icon.png" alt="Širdžiai ir kraujagyslėms">
+            <p>Širdžiai ir kraujagyslėms</p>
+        </div>
+        <div class="category">
+            <img src="sleep_icon.png" alt="Nervų sistemai ir geram miegui">
+            <p>Nervų sistemai ir geram miegui</p>
+        </div>
+        <div class="category">
+            <img src="lungs_icon.png" alt="Kvėpavimo takams">
+            <p>Kvėpavimo takams</p>
+        </div>
+        <div class="category">
+            <img src="immunity_icon.png" alt="Imunitetui">
+            <p>Imunitetui</p>
+        </div>
+        <div class="category">
+            <img src="liver_icon.png" alt="Kepenims">
+            <p>Kepenims</p>
+        </div>
+        <div class="category">
+            <img src="digestion_icon.png" alt="Virškinimo sistemai">
+            <p>Virškinimo sistemai</p>
+        </div>
+        <div class="category">
+            <img src="vitamins_icon.png" alt="Vitaminai ir mineralai">
+            <p>Vitaminai ir mineralai</p>
+        </div>
+        <div class="category">
+            <img src="women_icon.png" alt="Moters sveikatai ir grožiui">
+            <p>Moters sveikatai ir grožiui</p>
         </div>
     </div>
 
